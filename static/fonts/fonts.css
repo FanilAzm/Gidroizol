@@ -1,0 +1,70 @@
+@font-face {
+	font-family: "HelveticaNeue-Regular";
+	src: url("HelveticaNeue-Regular/HelveticaNeue-Regular.eot");
+	src: url("HelveticaNeue-Regular/HelveticaNeue-Regular.eot?#iefix")format("embedded-opentype"),
+	url("HelveticaNeue-Regular/HelveticaNeue-Regular.woff") format("woff"),
+	url("HelveticaNeue-Regular/HelveticaNeue-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "HelveticaNeueCyr-Bold";
+	src: url("HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.eot");
+	src: url("HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.eot?#iefix")format("embedded-opentype"),
+	url("HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.woff") format("woff"),
+	url("HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "HelveticaNeueCyr-Light";
+	src: url("HelveticaNeueCyr-Light/HelveticaNeueCyr-Light.eot");
+	src: url("HelveticaNeueCyr-Light/HelveticaNeueCyr-Light.eot?#iefix")format("embedded-opentype"),
+	url("HelveticaNeueCyr-Light/HelveticaNeueCyr-Light.woff") format("woff"),
+	url("HelveticaNeueCyr-Light/HelveticaNeueCyr-Light.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "HelveticaNeueCyr-Medium";
+	src: url("HelveticaNeueCyr-Medium/HelveticaNeueCyr-Medium.eot");
+	src: url("HelveticaNeueCyr-Medium/HelveticaNeueCyr-Medium.eot?#iefix")format("embedded-opentype"),
+	url("HelveticaNeueCyr-Medium/HelveticaNeueCyr-Medium.woff") format("woff"),
+	url("HelveticaNeueCyr-Medium/HelveticaNeueCyr-Medium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "HelveticaNeueCyr-Thin";
+	src: url("HelveticaNeueCyr-Thin/HelveticaNeueCyr-Thin.eot");
+	src: url("HelveticaNeueCyr-Thin/HelveticaNeueCyr-Thin.eot?#iefix")format("embedded-opentype"),
+	url("HelveticaNeueCyr-Thin/HelveticaNeueCyr-Thin.woff") format("woff"),
+	url("HelveticaNeueCyr-Thin/HelveticaNeueCyr-Thin.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "LatoLight";
+	src: url("LatoLight/LatoLight.eot");
+	src: url("LatoLight/LatoLight.eot?#iefix")format("embedded-opentype"),
+	url("LatoLight/LatoLight.woff") format("woff"),
+	url("LatoLight/LatoLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "HelveticaNeueCyr-UltraLight";
+	src: url("HelveticaNeueCyr-UltraLight/HelveticaNeueCyr-UltraLight.eot");
+	src: url("HelveticaNeueCyr-UltraLight/HelveticaNeueCyr-UltraLight.eot?#iefix")format("embedded-opentype"),
+	url("HelveticaNeueCyr-UltraLight/HelveticaNeueCyr-UltraLight.woff") format("woff"),
+	url("HelveticaNeueCyr-UltraLight/HelveticaNeueCyr-UltraLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
