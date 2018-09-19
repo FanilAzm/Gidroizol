@@ -73,6 +73,7 @@ $(document).ready(function(){
 
   ////////////// height ///////////////
 
+  // $(".product__item").equalHeights();
   $(".product__title").equalHeights();
 
   ////////////// slider //////////////

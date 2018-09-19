@@ -3126,6 +3126,10 @@ button {
   color: #3a3e42;
   text-align: center;
   font-family: "HelveticaNeueCyr-Light", Arial, sans-serif;
+  transition: all 0.2s ease;
+}
+.product__link:hover {
+  color: #e11335;
 }
 .tabs__list {
   line-height: 0;
@@ -3203,6 +3207,7 @@ button {
   color: #fff;
   font-size: 0.6875rem;
   margin-right: 10px;
+  transition: all 0.3s ease;
 }
 .consultation__link:before {
   content: '';
@@ -3212,6 +3217,9 @@ button {
   background-position: -90px 0px;
   width: 21px;
   height: 21px;
+}
+.consultation__link:hover {
+  color: #fff;
 }
 .header__middle {
   position: relative;
@@ -3246,10 +3254,18 @@ button {
 }
 .head__contacts-mail a {
   font-size: 1.063rem;
+  transition: all 0.3s ease;
+}
+.head__contacts-mail a:hover {
+  color: #e11335;
 }
 .head__contacts-phone a {
   font-size: 1.063rem;
   font-family: "HelveticaNeueCyr-Bold", Arial, sans-serif;
+  transition: all 0.3s ease;
+}
+.head__contacts-phone a:hover {
+  color: #e11335;
 }
 .mail__desc {
   font-size: 0.6875rem;
@@ -3314,6 +3330,9 @@ button {
 .nav__mobile-line-bottom {
   top: 10px;
   transition: all linear 0.3s;
+}
+.footer__top .nav__list li:after {
+  display: none;
 }
 .footer__middle {
   padding: 55px 0;
@@ -3469,7 +3488,6 @@ button {
   background-color: #e11335;
 }
 .slider__content {
-  padding: 100px 0;
   color: #2e3338;
 }
 .slider__desc {
@@ -3539,8 +3557,8 @@ button {
 .info {
   padding: 100px 0;
   background-image: url("../../static/img/content/bg-info.png");
+  background-size: cover;
   background-position: center top;
-  background-repeat: no-repeat;
 }
 .info .section__title {
   color: #fff;
@@ -3558,6 +3576,10 @@ button {
   background-color: #fff;
   text-align: center;
   overflow: hidden;
+  transition: all 0.3s ease;
+}
+.info__item:hover {
+  color: #e11335;
 }
 .info__title {
   display: inline-block;
@@ -3575,10 +3597,11 @@ button {
   height: 275px;
   background-color: #fff;
   box-shadow: 0 0 6px 4px rgba(0,0,0,0.1);
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
 }
 .purview__item:hover {
   transform: scale(1.03);
+  color: #e11335;
 }
 .purview__title {
   position: absolute;
@@ -3651,6 +3674,7 @@ button {
   text-transform: none;
   font-size: 0.75rem;
   font-family: "HelveticaNeueCyr-Medium", Arial, sans-serif;
+  transform: translateX(-20px);
   opacity: 0;
   transition: all 0.3s ease;
 }
@@ -3660,9 +3684,11 @@ button {
 .cooperation__item-wrap:hover .g-btn {
   opacity: 1;
   color: #fff;
+  transform: translateX(0px);
 }
 .cooperation__item-wrap:hover .cooperation__item-title:before {
   opacity: 0;
+  left: 20%;
 }
 .cooperation__item {
   position: absolute;
@@ -3685,7 +3711,7 @@ button {
   width: 37px;
   background-color: #e11335;
   opacity: 1;
-  transition: all 0.2s ease;
+  transition: all 0.4s ease;
 }
 .news {
   padding: 70px 0 120px;
@@ -3702,6 +3728,9 @@ button {
   font-size: 0.75rem;
   font-family: "HelveticaNeueCyr-Medium", Arial, sans-serif;
   text-transform: none;
+}
+.news__item .g-btn:hover {
+  color: #fff;
 }
 .news__img img {
   width: 100%;
@@ -3856,6 +3885,11 @@ button {
   font-family: "HelveticaNeueCyr-Medium", Arial, sans-serif;
   text-transform: none;
   border: 1px solid #fff;
+  transition: all 0.4s ease;
+}
+.question .g-btn:hover {
+  color: #fff;
+  background-color: #272f3b;
 }
 .question .section__title {
   text-align: left;
@@ -3923,11 +3957,13 @@ button {
 }
 .tabs__content-item .product__item:hover .g-btn {
   opacity: 1;
+  color: #fff;
 }
 .tabs__content-item .product__item .product__title {
   width: 100%;
-  display: inline-block;
-  vertical-align: middle;
+  height: auto;
+  display: block;
+  vertical-align: top;
   margin-bottom: 15px;
 }
 .recomendation {
@@ -3980,6 +4016,9 @@ button {
   font-size: 0.75rem;
   font-family: "HelveticaNeueCyr-Medium", Arial, sans-serif;
   text-transform: none;
+}
+.product .g-btn:hover {
+  color: #fff;
 }
 .product .js-product-slide {
   margin-top: 25px;
@@ -4276,6 +4315,10 @@ button {
   text-transform: none;
   border: 1px solid #fff;
   cursor: pointer;
+  transition: all 0.5s ease;
+}
+.cooperate__form label .g-btn:hover {
+  background-color: #272f3b;
 }
 .cooperate__form-desc {
   width: 365px;
@@ -4597,6 +4640,8 @@ button {
   }
   .cooperation__title {
     position: relative;
+    top: 0;
+    transform: translateY(0);
   }
   .cooperation__items {
     margin-top: 30px;
