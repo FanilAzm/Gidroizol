@@ -3197,11 +3197,21 @@ button {
   color: #fff;
 }
 .consultation__link {
+  position: relative;
   display: inline-block;
-  vertical-align: middle;
+  padding-right: 30px;
   color: #fff;
   font-size: 0.6875rem;
   margin-right: 10px;
+}
+.consultation__link:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  background-image: url("../img/sprite/sprite.png");
+  background-position: -90px 0px;
+  width: 21px;
+  height: 21px;
 }
 .header__middle {
   position: relative;
