@@ -205,7 +205,7 @@ $(document).ready(function(){
 
       var myCollection = new ymaps.GeoObjectCollection({}, {
           iconLayout: 'default#image',
-          iconImageHref: '/static/img/general/flag.png',
+          iconImageHref: 'static/img/general/flag.png',
           iconImageSize: [20, 28],
           iconImageOffset: [-3, -42]
       });
@@ -236,7 +236,7 @@ $(document).ready(function(){
           preset: 'islands#redIcon', //все метки красные
           draggable: true, // и их можно перемещать
           iconLayout: 'default#image',
-          iconImageHref: '/static/img/general/flag.png',
+          iconImageHref: 'static/img/general/flag.png',
           iconImageSize: [20, 28],
           iconImageOffset: [-3, -42]
       });
@@ -267,7 +267,7 @@ $(document).ready(function(){
           preset: 'islands#redIcon', //все метки красные
           draggable: true, // и их можно перемещать
           iconLayout: 'default#image',
-          iconImageHref: '/static/img/general/flag.png',
+          iconImageHref: 'static/img/general/flag.png',
           iconImageSize: [20, 28],
           iconImageOffset: [-3, -42]
       });
@@ -298,7 +298,7 @@ $(document).ready(function(){
           preset: 'islands#redIcon', //все метки красные
           draggable: true, // и их можно перемещать
           iconLayout: 'default#image',
-          iconImageHref: '/static/img/general/flag.png',
+          iconImageHref: 'static/img/general/flag.png',
           iconImageSize: [20, 28],
           iconImageOffset: [-3, -42]
       });
@@ -329,7 +329,7 @@ $(document).ready(function(){
           preset: 'islands#redIcon', //все метки красные
           draggable: true, // и их можно перемещать
           iconLayout: 'default#image',
-          iconImageHref: '/static/img/general/flag.png',
+          iconImageHref: 'static/img/general/flag.png',
           iconImageSize: [20, 28],
           iconImageOffset: [-3, -42]
       });
