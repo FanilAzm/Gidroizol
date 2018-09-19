@@ -7,6 +7,7 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" type="text/css" href="static/fonts/fonts.css">
     <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <title>Главная страница
     </title>
   </head>
@@ -29,6 +30,11 @@
               <div class="head__contacts-phone">
                 <p class="phone__desc">Горячая линия</p><a href="tel:88005559407">8 800 555 94 07</a>
               </div>
+              <div class="nav__mobile">
+                <div class="nav__mobile-line nav__mobile-line-top"></div>
+                <div class="nav__mobile-line nav__mobile-line-middle"></div>
+                <div class="nav__mobile-line nav__mobile-line-bottom"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -43,14 +49,22 @@
                 <li><a class="nav__link" href="about.html">О компании</a></li>
                 <li><a class="nav__link" href="contacts.html">Контакты</a></li>
               </ul>
+              <ul class="nav__list-mobile">
+                <li><a class="nav__link" href="index.html">Главная</a></li>
+                <li><a class="nav__link" href="partners.html">Партнерам</a></li>
+                <li><a class="nav__link" href="products.html">Продукция</a></li>
+                <li><a class="nav__link" href="direction.html">Сферы применения</a></li>
+                <li><a class="nav__link" href="about.html">О компании</a></li>
+                <li><a class="nav__link" href="contacts.html">Контакты</a></li>
+              </ul>
             </div>
           </nav>
         </div>
       </header>
       <section class="product">
-        <div class="container">
-          <div class="row">
-            <div class="col-5">
+        <div class="container h-100">
+          <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-11 col-md-6 col-lg-5">
               <div class="js-product-slide">
                 <div class="product-slide__img"><img src="static/img/content/products/product1-big.png" alt="Product"><img src="static/img/content/products/product1-big.png" alt="Product"><img src="static/img/content/products/product1-big.png" alt="Product"><img src="static/img/content/products/product1-big.png" alt="Product"></div>
               </div>
@@ -58,7 +72,7 @@
                 <div class="product-slider__img"><img src="static/img/content/products/product1-big.png" alt="Product"><img src="static/img/content/products/product1-big.png" alt="Product"><img src="static/img/content/products/product1-big.png" alt="Product"><img src="static/img/content/products/product1-big.png" alt="Product"></div>
               </div>
             </div>
-            <div class="col-7">
+            <div class="col-12 col-md-6 col-lg-7">
               <div class="product__info">
                 <p class="section__title"><span>ПБК Гидроизол</span></p>
                 <div class="direction__img-wrap">
@@ -120,7 +134,7 @@
       </section>
       <section class="sertificate">
         <div class="container justify-content-center">
-          <div class="g-btn">Сертификаты качества продукции</div>
+          <p class="g-btn">Сертификаты качества продукции</p>
           <div class="js-sert-slider">
             <div class="sert__img"><img src="static/img/content/sert.png" alt="Сертификат"></div>
             <div class="sert__img"><img src="static/img/content/sert.png" alt="Сертификат"></div>
@@ -134,12 +148,19 @@
         </div>
       </section>
       <section class="question">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="question__img"><img src="static/img/general/question.png" alt="question-img"></div>
-            <p class="section__title">Есть вопросы? <span>Обращайтесь</span></p><a class="g-btn" href="#">Написать</a>
-            <div class="contacts__phone">
-              <p class="phone__desc">Горячая линия</p><a href="tel:88005559407">8 800 555 94 07</a>
+        <div class="container h-100">
+          <div class="row h-100 justify-content-center align-items-center">
+            <div class="order-1 order-sm-0">
+              <div class="question__img"><img src="static/img/general/question.png" alt="question-img"></div>
+            </div>
+            <div class="order-3 order-sm-0">
+              <p class="section__title">Есть вопросы? <span>Обращайтесь</span></p>
+            </div>
+            <div class="order-4 order-sm-0"><a class="g-btn" href="#">Написать</a></div>
+            <div class="order-2 order-sm-0">
+              <div class="contacts__phone">
+                <p class="phone__desc">Горячая линия</p><a href="tel:88005559407">8 800 555 94 07</a>
+              </div>
             </div>
           </div>
         </div>
@@ -162,8 +183,8 @@
       </div>
       <div class="footer__middle">
         <div class="container">
-          <div class="row">
-            <div class="col-4">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4">
               <p class="footer__title">О нас</p>
               <p class="footer__desc">Компания Кипер - ведущий приозводитель материалов для обмазочной гидроизоляции.</p>
               <p class="footer__title">Информация</p>
@@ -174,7 +195,7 @@
               <p class="footer__desc">Широкий ассортимент удобной тары (от 3 л. до 200 л.).</p>
               <p class="footer__desc">Вся продукция сертифицирована.</p>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-lg-4">
               <p class="footer__title">Контакты</p>
               <p class="footer__contacts">Адрес:<span class="contacts-point">г. Хабаровск, <br>ул. Целинная - 15, оф. 210</span></p>
               <p class="footer__contacts">Телефон:<span class="contacts-point">8 800 555 94 07</span></p>
@@ -182,7 +203,7 @@
               <p class="footer__contacts">Телефон в <br>Санкт-Петербурге:<span class="contacts-point">8 800 555 94 07</span></p>
               <p class="footer__contacts">Email:<span class="contacts-point">sale.khv@kiperr.ru</span></p>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-lg-4">
               <form class="form">
                 <p class="footer__title">Задайте вопрос о гидроизоляции</p>
                 <input type="text" name="name" placeholder="Имя*" required>
@@ -197,7 +218,9 @@
         </div>
       </div>
       <div class="footer__bottom">
-        <p class="footer__desc">© Кипер 2011-2018 | Все права защищены. Копирование материалов данного сайта без разрешения правообладателя запрещено.</p>
+        <div class="col-12">
+          <p class="footer__desc">© Кипер 2011-2018 | Все права защищены. Копирование материалов данного сайта без разрешения правообладателя запрещено.</p>
+        </div>
       </div>
     </footer>
     <script src="static/js/jquery.js"></script>

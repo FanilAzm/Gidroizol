@@ -7,6 +7,7 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" type="text/css" href="static/fonts/fonts.css">
     <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <title>Главная страница
     </title>
   </head>
@@ -29,6 +30,11 @@
               <div class="head__contacts-phone">
                 <p class="phone__desc">Горячая линия</p><a href="tel:88005559407">8 800 555 94 07</a>
               </div>
+              <div class="nav__mobile">
+                <div class="nav__mobile-line nav__mobile-line-top"></div>
+                <div class="nav__mobile-line nav__mobile-line-middle"></div>
+                <div class="nav__mobile-line nav__mobile-line-bottom"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -36,6 +42,14 @@
           <nav class="nav">
             <div class="container">
               <ul class="nav__list">
+                <li><a class="nav__link" href="index.html">Главная</a></li>
+                <li><a class="nav__link" href="partners.html">Партнерам</a></li>
+                <li><a class="nav__link" href="products.html">Продукция</a></li>
+                <li><a class="nav__link" href="direction.html">Сферы применения</a></li>
+                <li><a class="nav__link" href="about.html">О компании</a></li>
+                <li><a class="nav__link" href="contacts.html">Контакты</a></li>
+              </ul>
+              <ul class="nav__list-mobile">
                 <li><a class="nav__link" href="index.html">Главная</a></li>
                 <li><a class="nav__link" href="partners.html">Партнерам</a></li>
                 <li><a class="nav__link" href="products.html">Продукция</a></li>
@@ -51,29 +65,28 @@
         <div class="container">
           <div class="row justify-content-center">
             <p class="section__title"><span>О компании</span></p>
-            <div class="col-12">
-              <div class="row">
-                <div class="col-6">
-                  <div class="about__img"><img src="static/img/content/about/slide1.png" alt="About"></div>
-                </div>
-                <div class="col-6">
-                  <p class="desc-text">Компания Кипер является производителем одного из наиболее эффективных видов гидроизоляции - обмазочной. В отличии от оклеечной (рулонной) гидроизоляции мастика проникает вглубь обрабатываемой поверхности, герметизирует все поры и микротрещины, создает надежную защиту от влаги. Еще одно преимущество обмазочной гидроизоляции – простота применения. Она может наноситься любым малярным инструментом самостоятельно, что избавляет от необходимости применения дорогостоящего оборудования и высокооплачиваемых специалистов. Материал широко представлен в розничных сетях, имеет устойчивый спрос. Заслужил доверие профессиональных строителей. Применяется при строительстве жилых домов (гидроизоляция фундаментов, кровель), для капитального и локального ремонта кровель, при устройстве ливневой канализации, при строительстве мостов, линий электропередач и прочих заглубляемых в землю объектов.</p>
-                </div>
-              </div>
-              <p class="desc-text">Сейчас возможность использовать продукты Компании Кипер есть не только у дальневосточников, но и у жителей Сибири, Урала, Южного Федерального округа.</p>
-              <p class="desc-text">Для оптимизации логистики и снижения цен открыты дополнительные производства в западной части России. Компания внедряет новые технологии производств.</p>
-              <p class="desc-text">В 2014 году выпустили новую линейку продукции:<br>Гидриз-Комфорт - для внутренних работ;<br>Гидриз-Профи - для гидроизоляции в условиях повышенной влажности и высоких температурах,<br>УФ-Стоп - для защиты мастичных и рулонных кровель от разрушения.</p>
-            </div>
           </div>
+          <div class="about__img"><img src="static/img/content/about/slide1.png" alt="About"></div>
+          <p class="desc-text">Компания Кипер является производителем одного из наиболее эффективных видов гидроизоляции - обмазочной. В отличии от оклеечной (рулонной) гидроизоляции мастика проникает вглубь обрабатываемой поверхности, герметизирует все поры и микротрещины, создает надежную защиту от влаги. Еще одно преимущество обмазочной гидроизоляции – простота применения. Она может наноситься любым малярным инструментом самостоятельно, что избавляет от необходимости применения дорогостоящего оборудования и высокооплачиваемых специалистов. Материал широко представлен в розничных сетях, имеет устойчивый спрос. Заслужил доверие профессиональных строителей. Применяется при строительстве жилых домов (гидроизоляция фундаментов, кровель), для капитального и локального ремонта кровель, при устройстве ливневой канализации, при строительстве мостов, линий электропередач и прочих заглубляемых в землю объектов.</p>
+          <p class="desc-text">Сейчас возможность использовать продукты Компании Кипер есть не только у дальневосточников, но и у жителей Сибири, Урала, Южного Федерального округа.</p>
+          <p class="desc-text">Для оптимизации логистики и снижения цен открыты дополнительные производства в западной части России. Компания внедряет новые технологии производств.</p>
+          <p class="desc-text">В 2014 году выпустили новую линейку продукции:<br>Гидриз-Комфорт - для внутренних работ;<br>Гидриз-Профи - для гидроизоляции в условиях повышенной влажности и высоких температурах,<br>УФ-Стоп - для защиты мастичных и рулонных кровель от разрушения.</p>
         </div>
       </section>
       <section class="question">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="question__img"><img src="static/img/general/question.png" alt="question-img"></div>
-            <p class="section__title">Есть вопросы? <span>Обращайтесь</span></p><a class="g-btn" href="#">Написать</a>
-            <div class="contacts__phone">
-              <p class="phone__desc">Горячая линия</p><a href="tel:88005559407">8 800 555 94 07</a>
+        <div class="container h-100">
+          <div class="row h-100 justify-content-center align-items-center">
+            <div class="order-1 order-sm-0">
+              <div class="question__img"><img src="static/img/general/question.png" alt="question-img"></div>
+            </div>
+            <div class="order-3 order-sm-0">
+              <p class="section__title">Есть вопросы? <span>Обращайтесь</span></p>
+            </div>
+            <div class="order-4 order-sm-0"><a class="g-btn" href="#">Написать</a></div>
+            <div class="order-2 order-sm-0">
+              <div class="contacts__phone">
+                <p class="phone__desc">Горячая линия</p><a href="tel:88005559407">8 800 555 94 07</a>
+              </div>
             </div>
           </div>
         </div>
@@ -96,8 +109,8 @@
       </div>
       <div class="footer__middle">
         <div class="container">
-          <div class="row">
-            <div class="col-4">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4">
               <p class="footer__title">О нас</p>
               <p class="footer__desc">Компания Кипер - ведущий приозводитель материалов для обмазочной гидроизоляции.</p>
               <p class="footer__title">Информация</p>
@@ -108,7 +121,7 @@
               <p class="footer__desc">Широкий ассортимент удобной тары (от 3 л. до 200 л.).</p>
               <p class="footer__desc">Вся продукция сертифицирована.</p>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-lg-4">
               <p class="footer__title">Контакты</p>
               <p class="footer__contacts">Адрес:<span class="contacts-point">г. Хабаровск, <br>ул. Целинная - 15, оф. 210</span></p>
               <p class="footer__contacts">Телефон:<span class="contacts-point">8 800 555 94 07</span></p>
@@ -116,7 +129,7 @@
               <p class="footer__contacts">Телефон в <br>Санкт-Петербурге:<span class="contacts-point">8 800 555 94 07</span></p>
               <p class="footer__contacts">Email:<span class="contacts-point">sale.khv@kiperr.ru</span></p>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-lg-4">
               <form class="form">
                 <p class="footer__title">Задайте вопрос о гидроизоляции</p>
                 <input type="text" name="name" placeholder="Имя*" required>
@@ -131,7 +144,9 @@
         </div>
       </div>
       <div class="footer__bottom">
-        <p class="footer__desc">© Кипер 2011-2018 | Все права защищены. Копирование материалов данного сайта без разрешения правообладателя запрещено.</p>
+        <div class="col-12">
+          <p class="footer__desc">© Кипер 2011-2018 | Все права защищены. Копирование материалов данного сайта без разрешения правообладателя запрещено.</p>
+        </div>
       </div>
     </footer>
     <script src="static/js/jquery.js"></script>
