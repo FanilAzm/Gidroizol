@@ -3,6 +3,24 @@
 
 $(document).ready(function(){
 
+  /////////////// Popup ////////////////
+
+  $('.popup').magnificPopup({
+    type: 'inline',
+
+    fixedContentPos: false,
+    fixedBgPos: true,
+
+    overflowY: 'auto',
+
+    closeBtnInside: true,
+    preloader: false,
+    
+    midClick: true,
+    removalDelay: 300,
+    mainClass: 'my-mfp-slide-bottom'
+  });
+
   /////////////// Mobile nav //////////////
 
   $('.nav__mobile').click(function(){
@@ -10,20 +28,19 @@ $(document).ready(function(){
     $('.nav__list-mobile').slideToggle('mobile__show');
   });
 
-  /////////////// Map ///////////////////
+  /////////////// Mask ///////////////////
 
-
-
-  // function initMap() {
-  //   var centerLatLng = new google.maps.LatLng(48.468975780852126, 135.1129739999999);
-  //   var mapOptions = {
-  //     center: centerLatLng, // Координаты центра мы берем из переменной centerLatLng
-  //     zoom: 10               // Зум по умолчанию. Возможные значения от 0 до 21
-  //   };
-  //   var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-  // }
-
-  // google.maps.event.addDomListener(window, "load", initMap);
+  $(function(){
+    $("#phone").mask("+7 (999) 999-9999");
+  });
+  
+  $(function(){
+    $("#content-phone").mask("+7 (999) 999-9999");
+  });
+  
+  $(function(){
+    $("#popup-phone").mask("+7 (999) 999-9999");
+  });
 
   ////////////// Akkordeon /////////////////
 
@@ -74,7 +91,7 @@ $(document).ready(function(){
   ////////////// height ///////////////
 
   // $(".product__item").equalHeights();
-  $(".product__title").equalHeights();
+  // $(".product__title").equalHeights();
 
   ////////////// slider //////////////
 
@@ -185,6 +202,8 @@ $(document).ready(function(){
   });
 
 });
+
+  /////////////// Map ///////////////////
 
   ymaps.ready(init);
     function init(){ 

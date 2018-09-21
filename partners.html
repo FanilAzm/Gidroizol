@@ -7,7 +7,7 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" type="text/css" href="static/fonts/fonts.css">
     <link rel="stylesheet" type="text/css" href="static/css/main.css">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="static/css/popup.css">
     <title>Главная страница
     </title>
   </head>
@@ -16,7 +16,7 @@
       <header>
         <div class="header__top">
           <div class="container">
-            <div class="consultation"><a class="consultation__link" href="#">Заказать у нас консультацию</a></div>
+            <div class="consultation"><a class="consultation__link popup" href="#write">Заказать у нас консультацию</a></div>
           </div>
         </div>
         <div class="header__middle">
@@ -60,7 +60,28 @@
             </div>
           </nav>
         </div>
+        <section class="zoom-anim-dialog mfp-hide" id="write">
+          <div class="container">
+            <div class="row">
+              <form class="form">
+                <div class="form__img"><img src="static/img/content/popup-logo.png" alt="logo"></div>
+                <p class="footer__title">Напишите нам</p>
+                <input type="text" name="name" placeholder="Имя*" required>
+                <input type="phone" name="phone" placeholder="Телефон*" required id="popup-phone">
+                <textarea name="text" cols="30" rows="10" placeholder="Вопрос*"></textarea>
+                <label for="btn">
+                  <input class="g-btn" id="btn" type="submit" value="Написать">
+                </label>
+              </form>
+            </div>
+          </div>
+        </section>
       </header>
+      <div class="container">
+        <div class="list__crumbs"> 
+          <p>Главная / <span>Партнёрам</span></p>
+        </div>
+      </div>
       <section class="partners">
         <div class="container">
           <div class="row justify-content-center">
@@ -156,7 +177,7 @@
                 </div>
                 <div class="col-12 col-md-6">
                   <input type="text" name="mail" placeholder="E-mail" required>
-                  <input type="text" name="phone" placeholder="Телефон" required>
+                  <input type="text" name="phone" placeholder="Телефон" required id="content-phone">
                 </div>
               </div>
               <textarea name="text" placeholder="Комментарий"></textarea>
@@ -206,11 +227,11 @@
               <p class="footer__contacts">Телефон в <br>Санкт-Петербурге:<span class="contacts-point">8 800 555 94 07</span></p>
               <p class="footer__contacts">Email:<span class="contacts-point">sale.khv@kiperr.ru</span></p>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-10 col-lg-4">
               <form class="form">
                 <p class="footer__title">Задайте вопрос о гидроизоляции</p>
                 <input type="text" name="name" placeholder="Имя*" required>
-                <input type="phone" name="phone" placeholder="Телефон*" required>
+                <input type="phone" name="phone" placeholder="Телефон*" required id="phone">
                 <textarea name="text" cols="30" rows="10" placeholder="Вопрос*"></textarea>
                 <label for="btn">
                   <input class="g-btn" id="btn" type="submit" value="Задать вопрос">
@@ -228,6 +249,7 @@
     </footer>
     <script src="static/js/jquery.js"></script>
     <script src="static/js/libs.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="static/js/main.js"></script>
   </body>
 </html>

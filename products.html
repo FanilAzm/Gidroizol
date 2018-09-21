@@ -7,7 +7,7 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" type="text/css" href="static/fonts/fonts.css">
     <link rel="stylesheet" type="text/css" href="static/css/main.css">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="static/css/popup.css">
     <title>Главная страница
     </title>
   </head>
@@ -16,7 +16,7 @@
       <header>
         <div class="header__top">
           <div class="container">
-            <div class="consultation"><a class="consultation__link" href="#">Заказать у нас консультацию</a></div>
+            <div class="consultation"><a class="consultation__link popup" href="#write">Заказать у нас консультацию</a></div>
           </div>
         </div>
         <div class="header__middle">
@@ -60,7 +60,28 @@
             </div>
           </nav>
         </div>
+        <section class="zoom-anim-dialog mfp-hide" id="write">
+          <div class="container">
+            <div class="row">
+              <form class="form">
+                <div class="form__img"><img src="static/img/content/popup-logo.png" alt="logo"></div>
+                <p class="footer__title">Напишите нам</p>
+                <input type="text" name="name" placeholder="Имя*" required>
+                <input type="phone" name="phone" placeholder="Телефон*" required id="popup-phone">
+                <textarea name="text" cols="30" rows="10" placeholder="Вопрос*"></textarea>
+                <label for="btn">
+                  <input class="g-btn" id="btn" type="submit" value="Написать">
+                </label>
+              </form>
+            </div>
+          </div>
+        </section>
       </header>
+      <div class="container">
+        <div class="list__crumbs"> 
+          <p>Главная / <span>Продукция</span></p>
+        </div>
+      </div>
       <section class="katalog">
         <div class="container">
           <div class="row justify-content-center">
@@ -97,516 +118,600 @@
               <li class="tabs__content-item active">
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product1.png" alt="Product"></div>
-                  <p class="product__title">ПБК Гидроизол</p>
+                  <div class="product__title"> 
+                    <p>ПБК Гидроизол</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product2.png" alt="Product"></div>
-                  <p class="product__title">Гидриз-К Комфорт</p>
+                  <div class="product__title">
+                    <p>Гидриз-К Комфорт</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product5.png" alt="Product"></div>
-                  <p class="product__title">"Жидкий битум" <br>Битумная мастика</p>
+                  <div class="product__title">
+                    <p>"Жидкий битум" <br>Битумная мастика</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product4.png" alt="Product"></div>
-                  <p class="product__title">Битумный праймер на основе ПБК "Гидроизол"</p>
+                  <div class="product__title">
+                    <p>Битумный праймер на основе ПБК "Гидроизол"</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product5.png" alt="Product"></div>
-                  <p class="product__title">Мастика "Брит"</p>
+                  <div class="product__title">
+                    <p>Мастика "Брит"</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product6.png" alt="Product"></div>
-                  <p class="product__title">Ленты НВ "Брит"</p>
+                  <div class="product__title">
+                    <p>Ленты НВ "Брит"</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product3.png" alt="Product"></div>
-                  <p class="product__title">МБПЗ "КиперДор"</p>
+                  <div class="product__title">
+                    <p>МБПЗ "КиперДор"</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
               </li>
               <li class="tabs__content-item">
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product2.png" alt="Product"></div>
-                  <p class="product__title">Гидриз-К Комфорт</p>
+                  <div class="product__title">
+                    <p>Гидриз-К Комфорт</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product1.png" alt="Product"></div>
-                  <p class="product__title">ПБК Гидроизол</p>
+                  <div class="product__title">
+                    <p>ПБК Гидроизол</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product5.png" alt="Product"></div>
-                  <p class="product__title">"Жидкий битум" <br>Битумная мастика</p>
+                  <div class="product__title">
+                    <p>"Жидкий битум" <br>Битумная мастика</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product4.png" alt="Product"></div>
-                  <p class="product__title">Битумный праймер на основе ПБК "Гидроизол"</p>
+                  <div class="product__title">
+                    <p>Битумный праймер на основе ПБК "Гидроизол"</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product5.png" alt="Product"></div>
-                  <p class="product__title">Мастика "Брит"</p>
+                  <div class="product__title">
+                    <p>Мастика "Брит"</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product6.png" alt="Product"></div>
-                  <p class="product__title">Ленты НВ "Брит"</p>
+                  <div class="product__title">
+                    <p>Ленты НВ "Брит"</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product3.png" alt="Product"></div>
-                  <p class="product__title">МБПЗ "КиперДор"</p>
+                  <div class="product__title">
+                    <p>МБПЗ "КиперДор"</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
               </li>
               <li class="tabs__content-item">
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product5.png" alt="Product"></div>
-                  <p class="product__title">"Жидкий битум" <br>Битумная мастика</p>
+                  <div class="product__title">
+                    <p>"Жидкий битум" <br>Битумная мастика</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product1.png" alt="Product"></div>
-                  <p class="product__title">ПБК Гидроизол</p>
+                  <div class="product__title">
+                    <p>ПБК Гидроизол</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product2.png" alt="Product"></div>
-                  <p class="product__title">Гидриз-К Комфорт</p>
+                  <div class="product__title">
+                    <p>Гидриз-К Комфорт</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product4.png" alt="Product"></div>
-                  <p class="product__title">Битумный праймер на основе ПБК "Гидроизол"</p>
+                  <div class="product__title">
+                    <p>Битумный праймер на основе ПБК "Гидроизол"</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product5.png" alt="Product"></div>
-                  <p class="product__title">Мастика "Брит"</p>
+                  <div class="product__title">
+                    <p>Мастика "Брит"</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product6.png" alt="Product"></div>
-                  <p class="product__title">Ленты НВ "Брит"</p>
+                  <div class="product__title">
+                    <p>Ленты НВ "Брит"</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product3.png" alt="Product"></div>
-                  <p class="product__title">МБПЗ "КиперДор"</p>
+                  <div class="product__title">
+                    <p>МБПЗ "КиперДор"</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
               </li>
               <li class="tabs__content-item">
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product1.png" alt="Product"></div>
-                  <p class="product__title">ПБК Гидроизол</p>
+                  <div class="product__title"> 
+                    <p>ПБК Гидроизол</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product2.png" alt="Product"></div>
-                  <p class="product__title">Гидриз-К Комфорт</p>
+                  <div class="product__title">
+                    <p>Гидриз-К Комфорт</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product5.png" alt="Product"></div>
-                  <p class="product__title">"Жидкий битум" <br>Битумная мастика</p>
+                  <div class="product__title">
+                    <p>"Жидкий битум" <br>Битумная мастика</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product4.png" alt="Product"></div>
-                  <p class="product__title">Битумный праймер на основе ПБК "Гидроизол"</p>
+                  <div class="product__title">
+                    <p>Битумный праймер на основе ПБК "Гидроизол"</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product5.png" alt="Product"></div>
-                  <p class="product__title">Мастика "Брит"</p>
+                  <div class="product__title">
+                    <p>Мастика "Брит"</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product6.png" alt="Product"></div>
-                  <p class="product__title">Ленты НВ "Брит"</p>
+                  <div class="product__title">
+                    <p>Ленты НВ "Брит"</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product3.png" alt="Product"></div>
-                  <p class="product__title">МБПЗ "КиперДор"</p>
+                  <div class="product__title">
+                    <p>МБПЗ "КиперДор"</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
               </li>
               <li class="tabs__content-item">
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product2.png" alt="Product"></div>
-                  <p class="product__title">Гидриз-К Комфорт</p>
+                  <div class="product__title">
+                    <p>Гидриз-К Комфорт</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product1.png" alt="Product"></div>
-                  <p class="product__title">ПБК Гидроизол</p>
+                  <div class="product__title">
+                    <p>ПБК Гидроизол</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product5.png" alt="Product"></div>
-                  <p class="product__title">"Жидкий битум" <br>Битумная мастика</p>
+                  <div class="product__title">
+                    <p>"Жидкий битум" <br>Битумная мастика</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product4.png" alt="Product"></div>
-                  <p class="product__title">Битумный праймер на основе ПБК "Гидроизол"</p>
+                  <div class="product__title">
+                    <p>Битумный праймер на основе ПБК "Гидроизол"</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product5.png" alt="Product"></div>
-                  <p class="product__title">Мастика "Брит"</p>
+                  <div class="product__title">
+                    <p>Мастика "Брит"</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product6.png" alt="Product"></div>
-                  <p class="product__title">Ленты НВ "Брит"</p>
+                  <div class="product__title">
+                    <p>Ленты НВ "Брит"</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product3.png" alt="Product"></div>
-                  <p class="product__title">МБПЗ "КиперДор"</p>
+                  <div class="product__title">
+                    <p>МБПЗ "КиперДор"</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
               </li>
               <li class="tabs__content-item">
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product5.png" alt="Product"></div>
-                  <p class="product__title">"Жидкий битум" <br>Битумная мастика</p>
+                  <div class="product__title">
+                    <p>"Жидкий битум" <br>Битумная мастика</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product1.png" alt="Product"></div>
-                  <p class="product__title">ПБК Гидроизол</p>
+                  <div class="product__title">
+                    <p>ПБК Гидроизол</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product2.png" alt="Product"></div>
-                  <p class="product__title">Гидриз-К Комфорт</p>
+                  <div class="product__title">
+                    <p>Гидриз-К Комфорт</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product4.png" alt="Product"></div>
-                  <p class="product__title">Битумный праймер на основе ПБК "Гидроизол"</p>
+                  <div class="product__title">
+                    <p>Битумный праймер на основе ПБК "Гидроизол"</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product5.png" alt="Product"></div>
-                  <p class="product__title">Мастика "Брит"</p>
+                  <div class="product__title">
+                    <p>Мастика "Брит"</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product6.png" alt="Product"></div>
-                  <p class="product__title">Ленты НВ "Брит"</p>
+                  <div class="product__title">
+                    <p>Ленты НВ "Брит"</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
                 <div class="product__item">
                   <div class="product__img"><img src="static/img/content/products/product3.png" alt="Product"></div>
-                  <p class="product__title">МБПЗ "КиперДор"</p>
+                  <div class="product__title">
+                    <p>МБПЗ "КиперДор"</p>
+                  </div>
                   <div class="direction__img-wrap">
-                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                    <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
                   </div><a class="g-btn" href="product.html">Подробнее</a>
                 </div>
               </li>
@@ -621,27 +726,39 @@
             <div class="product__items">
               <div class="product__item">
                 <div class="product__img"><img src="static/img/content/recomendation/1.png" alt="Product"></div>
-                <p class="product__title">Сольвент</p><a class="product__btn g-btn" href="#">Подробнее</a>
+                <div class="product__title">
+                  <p>Сольвент</p>
+                </div><a class="product__btn g-btn" href="#">Подробнее</a>
               </div>
               <div class="product__item">
                 <div class="product__img"><img src="static/img/content/recomendation/2.png" alt="Product"></div>
-                <p class="product__title">Стеклоткань</p><a class="product__btn g-btn" href="#">Подробнее</a>
+                <div class="product__title">
+                  <p>Стеклоткань</p>
+                </div><a class="product__btn g-btn" href="#">Подробнее</a>
               </div>
               <div class="product__item">
                 <div class="product__img"><img src="static/img/content/recomendation/3.png" alt="Product"></div>
-                <p class="product__title">Кисть-макловица</p><a class="product__btn g-btn" href="#">Подробнее</a>
+                <div class="product__title">
+                  <p>Кисть-макловица</p>
+                </div><a class="product__btn g-btn" href="#">Подробнее</a>
               </div>
               <div class="product__item">
                 <div class="product__img"><img src="static/img/content/recomendation/4.png" alt="Product"></div>
-                <p class="product__title">Средства по уборке <br>льда "ICEMELT"</p><a class="product__btn g-btn" href="#">Подробнее</a>
+                <div class="product__title">
+                  <p>Средства по уборке <br>льда "ICEMELT"</p>
+                </div><a class="product__btn g-btn" href="#">Подробнее</a>
               </div>
               <div class="product__item">
                 <div class="product__img"><img src="static/img/content/recomendation/5.png" alt="Product"></div>
-                <p class="product__title">Электрод ADMIRAL</p><a class="product__btn g-btn" href="#">Подробнее</a>
+                <div class="product__title">
+                  <p>Электрод ADMIRAL</p>
+                </div><a class="product__btn g-btn" href="#">Подробнее</a>
               </div>
               <div class="product__item">
                 <div class="product__img"><img src="static/img/content/recomendation/6.png" alt="Product"></div>
-                <p class="product__title">Пленка монтажная <br>ADMIRAL</p><a class="product__btn g-btn" href="#">Подробнее</a>
+                <div class="product__title">
+                  <p>Пленка монтажная <br>ADMIRAL</p>
+                </div><a class="product__btn g-btn" href="#">Подробнее</a>
               </div>
             </div>
           </div>
@@ -656,7 +773,7 @@
             <div class="order-3 order-sm-0">
               <p class="section__title">Есть вопросы? <span>Обращайтесь</span></p>
             </div>
-            <div class="order-4 order-sm-0"><a class="g-btn" href="#">Написать</a></div>
+            <div class="order-4 order-sm-0"><a class="g-btn popup" href="#write">Написать</a></div>
             <div class="order-2 order-sm-0">
               <div class="contacts__phone">
                 <p class="phone__desc">Горячая линия</p><a href="tel:88005559407">8 800 555 94 07</a>
@@ -664,6 +781,22 @@
             </div>
           </div>
         </div>
+        <section class="zoom-anim-dialog mfp-hide" id="write">
+          <div class="container">
+            <div class="row">
+              <form class="form">
+                <div class="form__img"><img src="static/img/content/popup-logo.png" alt="logo"></div>
+                <p class="footer__title">Напишите нам</p>
+                <input type="text" name="name" placeholder="Имя*" required>
+                <input type="phone" name="phone" placeholder="Телефон*" required id="popup-phone">
+                <textarea name="text" cols="30" rows="10" placeholder="Вопрос*"></textarea>
+                <label for="btn">
+                  <input class="g-btn" id="btn" type="submit" value="Написать">
+                </label>
+              </form>
+            </div>
+          </div>
+        </section>
       </section>
     </div>
     <footer>
@@ -703,11 +836,11 @@
               <p class="footer__contacts">Телефон в <br>Санкт-Петербурге:<span class="contacts-point">8 800 555 94 07</span></p>
               <p class="footer__contacts">Email:<span class="contacts-point">sale.khv@kiperr.ru</span></p>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-10 col-lg-4">
               <form class="form">
                 <p class="footer__title">Задайте вопрос о гидроизоляции</p>
                 <input type="text" name="name" placeholder="Имя*" required>
-                <input type="phone" name="phone" placeholder="Телефон*" required>
+                <input type="phone" name="phone" placeholder="Телефон*" required id="phone">
                 <textarea name="text" cols="30" rows="10" placeholder="Вопрос*"></textarea>
                 <label for="btn">
                   <input class="g-btn" id="btn" type="submit" value="Задать вопрос">
@@ -725,6 +858,7 @@
     </footer>
     <script src="static/js/jquery.js"></script>
     <script src="static/js/libs.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="static/js/main.js"></script>
   </body>
 </html>

@@ -7,7 +7,7 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" type="text/css" href="static/fonts/fonts.css">
     <link rel="stylesheet" type="text/css" href="static/css/main.css">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="static/css/popup.css">
     <title>Главная страница
     </title>
   </head>
@@ -16,7 +16,7 @@
       <header>
         <div class="header__top">
           <div class="container">
-            <div class="consultation"><a class="consultation__link" href="#">Заказать у нас консультацию</a></div>
+            <div class="consultation"><a class="consultation__link popup" href="#write">Заказать у нас консультацию</a></div>
           </div>
         </div>
         <div class="header__middle">
@@ -60,19 +60,40 @@
             </div>
           </nav>
         </div>
+        <section class="zoom-anim-dialog mfp-hide" id="write">
+          <div class="container">
+            <div class="row">
+              <form class="form">
+                <div class="form__img"><img src="static/img/content/popup-logo.png" alt="logo"></div>
+                <p class="footer__title">Напишите нам</p>
+                <input type="text" name="name" placeholder="Имя*" required>
+                <input type="phone" name="phone" placeholder="Телефон*" required id="popup-phone">
+                <textarea name="text" cols="30" rows="10" placeholder="Вопрос*"></textarea>
+                <label for="btn">
+                  <input class="g-btn" id="btn" type="submit" value="Написать">
+                </label>
+              </form>
+            </div>
+          </div>
+        </section>
       </header>
+      <div class="container">
+        <div class="list__crumbs"> 
+          <p>Главная / <span>Сферы применения</span></p>
+        </div>
+      </div>
       <section class="direction">
         <div class="container">
           <div class="row justify-content-center">
             <p class="section__title"><span>Сферы </span>применения</p>
             <div class="col-12">
               <div class="direction__img-wrap">
-                <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction"></div>
-                <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction"></div>
-                <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction"></div>
-                <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction"></div>
-                <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction"></div>
+                <div class="direction__img"><img src="static/img/general/direction/1.png" alt="Direction" title="ЛЭП"></div>
+                <div class="direction__img"><img src="static/img/general/direction/2.png" alt="Direction" title="Кровельные работы"></div>
+                <div class="direction__img"><img src="static/img/general/direction/3.png" alt="Direction" title="ЖБИ"></div>
+                <div class="direction__img"><img src="static/img/general/direction/4.png" alt="Direction" title="Общестроительные работы"></div>
+                <div class="direction__img"><img src="static/img/general/direction/5.png" alt="Direction" title="Бытовые работы"></div>
+                <div class="direction__img"><img src="static/img/general/direction/6.png" alt="Direction" title="Дорожные работы"></div>
               </div>
               <p class="desc-title">Надежный барьер на пути разрушительной влаги</p>
               <p class="desc-text">Среди всех факторов, негативным образом влияющих на долговечность строительных материалов, самым разрушительным и неприятным является вода. Она оказывает негативное воздействие на самые прочные строительные материалы, включая бетон и лучшие марки стали. Предлагаемые вниманию потребителей гидроизоляционные материалы для кровли, фундамента, стен и прочих элементов позволяют успешно противостоять влаге.</p>
@@ -90,27 +111,37 @@
                     <div class="product__items">
                       <div class="product__item">
                         <div class="product__img"><img src="static/img/content/products/product1.png" alt="Product"></div>
-                        <p class="product__title">ПБК Гидроизол</p>
+                        <div class="product__title">
+                          <p>ПБК Гидроизол</p>
+                        </div>
                         <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды</p>
                       </div>
                       <div class="product__item">
                         <div class="product__img"><img src="static/img/content/products/product2.png" alt="Product"></div>
-                        <p class="product__title">Гидриз-К Комфорт</p>
+                        <div class="product__title">
+                          <p>Гидриз-К Комфорт</p>
+                        </div>
                         <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды </p>
                       </div>
                       <div class="product__item">
                         <div class="product__img"><img src="static/img/content/products/product3.png" alt="Product"></div>
-                        <p class="product__title">КиперДор</p>
+                        <div class="product__title">
+                          <p>КиперДор</p>
+                        </div>
                         <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды</p>
                       </div>
                       <div class="product__item">
                         <div class="product__img"><img src="static/img/content/products/product4.png" alt="Product"></div>
-                        <p class="product__title">Праймер</p>
+                        <div class="product__title">
+                          <p>Праймер</p>
+                        </div>
                         <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды</p>
                       </div>
                       <div class="product__item">
                         <div class="product__img"><img src="static/img/content/products/product5.png" alt="Product"></div>
-                        <p class="product__title">Жидкий битум</p>
+                        <div class="product__title">
+                          <p>Жидкий битум</p>
+                        </div>
                         <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды</p>
                       </div>
                     </div>
@@ -119,45 +150,6 @@
                 <div class="direction__item">
                   <div class="direction__item-img"><img class="direction__bg" src="static/img/content/direction/2.png" alt="Direction">
                     <p class="direction__item-img--desc">ЖБИ комбинаты</p>
-                    <div class="direction__img d-none d-sm-block"><img src="static/img/general/direction/2.png" alt="Direction"></div>
-                  </div>
-                  <div class="direction__item-content">
-                    <div class="direction__item-desc">
-                      <p class="desc-title">Крыши и наружные конструкции</p>
-                      <p class="desc-text">Чтобы гидроизоляция крыши гаража служила долго и надежно, используется ПБК Гидроизол. Этот комплекс предназначен для использования в различных случаях:<br>Ремонт отдельных элементов настилочной или монтаж новой кровли;<br>Организация надежных стыков при создании крыши сложной формы и при наличии многих элементов со сложным сопряжением, например отводы вентиляции, примыкания и прочее.</p>
-                    </div>
-                    <div class="product__items">
-                      <div class="product__item">
-                        <div class="product__img"><img src="static/img/content/products/product1.png" alt="Product"></div>
-                        <p class="product__title">ПБК Гидроизол</p>
-                        <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды</p>
-                      </div>
-                      <div class="product__item">
-                        <div class="product__img"><img src="static/img/content/products/product2.png" alt="Product"></div>
-                        <p class="product__title">Гидриз-К Комфорт</p>
-                        <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды </p>
-                      </div>
-                      <div class="product__item">
-                        <div class="product__img"><img src="static/img/content/products/product3.png" alt="Product"></div>
-                        <p class="product__title">КиперДор</p>
-                        <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды</p>
-                      </div>
-                      <div class="product__item">
-                        <div class="product__img"><img src="static/img/content/products/product4.png" alt="Product"></div>
-                        <p class="product__title">Праймер</p>
-                        <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды</p>
-                      </div>
-                      <div class="product__item">
-                        <div class="product__img"><img src="static/img/content/products/product5.png" alt="Product"></div>
-                        <p class="product__title">Жидкий битум</p>
-                        <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="direction__item">
-                  <div class="direction__item-img"><img class="direction__bg" src="static/img/content/direction/3.png" alt="Direction">
-                    <p class="direction__item-img--desc">Кровельные работы</p>
                     <div class="direction__img d-none d-sm-block"><img src="static/img/general/direction/3.png" alt="Direction"></div>
                   </div>
                   <div class="direction__item-content">
@@ -168,27 +160,86 @@
                     <div class="product__items">
                       <div class="product__item">
                         <div class="product__img"><img src="static/img/content/products/product1.png" alt="Product"></div>
-                        <p class="product__title">ПБК Гидроизол</p>
+                        <div class="product__title">
+                          <p>ПБК Гидроизол</p>
+                        </div>
                         <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды</p>
                       </div>
                       <div class="product__item">
                         <div class="product__img"><img src="static/img/content/products/product2.png" alt="Product"></div>
-                        <p class="product__title">Гидриз-К Комфорт</p>
+                        <div class="product__title">
+                          <p>Гидриз-К Комфорт</p>
+                        </div>
                         <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды </p>
                       </div>
                       <div class="product__item">
                         <div class="product__img"><img src="static/img/content/products/product3.png" alt="Product"></div>
-                        <p class="product__title">КиперДор</p>
+                        <div class="product__title">
+                          <p>КиперДор</p>
+                        </div>
                         <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды</p>
                       </div>
                       <div class="product__item">
                         <div class="product__img"><img src="static/img/content/products/product4.png" alt="Product"></div>
-                        <p class="product__title">Праймер</p>
+                        <div class="product__title">
+                          <p>Праймер</p>
+                        </div>
                         <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды</p>
                       </div>
                       <div class="product__item">
                         <div class="product__img"><img src="static/img/content/products/product5.png" alt="Product"></div>
-                        <p class="product__title">Жидкий битум</p>
+                        <div class="product__title">
+                          <p>Жидкий битум</p>
+                        </div>
+                        <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="direction__item">
+                  <div class="direction__item-img"><img class="direction__bg" src="static/img/content/direction/3.png" alt="Direction">
+                    <p class="direction__item-img--desc">Кровельные работы</p>
+                    <div class="direction__img d-none d-sm-block"><img src="static/img/general/direction/2.png" alt="Direction"></div>
+                  </div>
+                  <div class="direction__item-content">
+                    <div class="direction__item-desc">
+                      <p class="desc-title">Крыши и наружные конструкции</p>
+                      <p class="desc-text">Чтобы гидроизоляция крыши гаража служила долго и надежно, используется ПБК Гидроизол. Этот комплекс предназначен для использования в различных случаях:<br>Ремонт отдельных элементов настилочной или монтаж новой кровли;<br>Организация надежных стыков при создании крыши сложной формы и при наличии многих элементов со сложным сопряжением, например отводы вентиляции, примыкания и прочее.</p>
+                    </div>
+                    <div class="product__items">
+                      <div class="product__item">
+                        <div class="product__img"><img src="static/img/content/products/product1.png" alt="Product"></div>
+                        <div class="product__title">
+                          <p>ПБК Гидроизол</p>
+                        </div>
+                        <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды</p>
+                      </div>
+                      <div class="product__item">
+                        <div class="product__img"><img src="static/img/content/products/product2.png" alt="Product"></div>
+                        <div class="product__title">
+                          <p>Гидриз-К Комфорт</p>
+                        </div>
+                        <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды </p>
+                      </div>
+                      <div class="product__item">
+                        <div class="product__img"><img src="static/img/content/products/product3.png" alt="Product"></div>
+                        <div class="product__title">
+                          <p>КиперДор</p>
+                        </div>
+                        <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды</p>
+                      </div>
+                      <div class="product__item">
+                        <div class="product__img"><img src="static/img/content/products/product4.png" alt="Product"></div>
+                        <div class="product__title">
+                          <p>Праймер</p>
+                        </div>
+                        <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды</p>
+                      </div>
+                      <div class="product__item">
+                        <div class="product__img"><img src="static/img/content/products/product5.png" alt="Product"></div>
+                        <div class="product__title">
+                          <p>Жидкий битум</p>
+                        </div>
                         <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды</p>
                       </div>
                     </div>
@@ -207,27 +258,37 @@
                     <div class="product__items">
                       <div class="product__item">
                         <div class="product__img"><img src="static/img/content/products/product1.png" alt="Product"></div>
-                        <p class="product__title">ПБК Гидроизол</p>
+                        <div class="product__title">
+                          <p>ПБК Гидроизол</p>
+                        </div>
                         <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды</p>
                       </div>
                       <div class="product__item">
                         <div class="product__img"><img src="static/img/content/products/product2.png" alt="Product"></div>
-                        <p class="product__title">Гидриз-К Комфорт</p>
+                        <div class="product__title">
+                          <p>Гидриз-К Комфорт</p>
+                        </div>
                         <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды </p>
                       </div>
                       <div class="product__item">
                         <div class="product__img"><img src="static/img/content/products/product3.png" alt="Product"></div>
-                        <p class="product__title">КиперДор</p>
+                        <div class="product__title">
+                          <p>КиперДор</p>
+                        </div>
                         <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды</p>
                       </div>
                       <div class="product__item">
                         <div class="product__img"><img src="static/img/content/products/product4.png" alt="Product"></div>
-                        <p class="product__title">Праймер</p>
+                        <div class="product__title">
+                          <p>Праймер</p>
+                        </div>
                         <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды</p>
                       </div>
                       <div class="product__item">
                         <div class="product__img"><img src="static/img/content/products/product5.png" alt="Product"></div>
-                        <p class="product__title">Жидкий битум</p>
+                        <div class="product__title">
+                          <p>Жидкий битум</p>
+                        </div>
                         <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды</p>
                       </div>
                     </div>
@@ -246,27 +307,37 @@
                     <div class="product__items">
                       <div class="product__item">
                         <div class="product__img"><img src="static/img/content/products/product1.png" alt="Product"></div>
-                        <p class="product__title">ПБК Гидроизол</p>
+                        <div class="product__title">
+                          <p>ПБК Гидроизол</p>
+                        </div>
                         <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды</p>
                       </div>
                       <div class="product__item">
                         <div class="product__img"><img src="static/img/content/products/product2.png" alt="Product"></div>
-                        <p class="product__title">Гидриз-К Комфорт</p>
+                        <div class="product__title">
+                          <p>Гидриз-К Комфорт</p>
+                        </div>
                         <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды </p>
                       </div>
                       <div class="product__item">
                         <div class="product__img"><img src="static/img/content/products/product3.png" alt="Product"></div>
-                        <p class="product__title">КиперДор</p>
+                        <div class="product__title">
+                          <p>КиперДор</p>
+                        </div>
                         <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды</p>
                       </div>
                       <div class="product__item">
                         <div class="product__img"><img src="static/img/content/products/product4.png" alt="Product"></div>
-                        <p class="product__title">Праймер</p>
+                        <div class="product__title">
+                          <p>Праймер</p>
+                        </div>
                         <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды</p>
                       </div>
                       <div class="product__item">
                         <div class="product__img"><img src="static/img/content/products/product5.png" alt="Product"></div>
-                        <p class="product__title">Жидкий битум</p>
+                        <div class="product__title">
+                          <p>Жидкий битум</p>
+                        </div>
                         <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды</p>
                       </div>
                     </div>
@@ -285,27 +356,37 @@
                     <div class="product__items">
                       <div class="product__item">
                         <div class="product__img"><img src="static/img/content/products/product1.png" alt="Product"></div>
-                        <p class="product__title">ПБК Гидроизол</p>
+                        <div class="product__title">
+                          <p>ПБК Гидроизол</p>
+                        </div>
                         <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды</p>
                       </div>
                       <div class="product__item">
                         <div class="product__img"><img src="static/img/content/products/product2.png" alt="Product"></div>
-                        <p class="product__title">Гидриз-К Комфорт</p>
+                        <div class="product__title">
+                          <p>Гидриз-К Комфорт</p>
+                        </div>
                         <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды </p>
                       </div>
                       <div class="product__item">
                         <div class="product__img"><img src="static/img/content/products/product3.png" alt="Product"></div>
-                        <p class="product__title">КиперДор</p>
+                        <div class="product__title">
+                          <p>КиперДор</p>
+                        </div>
                         <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды</p>
                       </div>
                       <div class="product__item">
                         <div class="product__img"><img src="static/img/content/products/product4.png" alt="Product"></div>
-                        <p class="product__title">Праймер</p>
+                        <div class="product__title">
+                          <p>Праймер</p>
+                        </div>
                         <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды</p>
                       </div>
                       <div class="product__item">
                         <div class="product__img"><img src="static/img/content/products/product5.png" alt="Product"></div>
-                        <p class="product__title">Жидкий битум</p>
+                        <div class="product__title">
+                          <p>Жидкий битум</p>
+                        </div>
                         <p class="product__desc">Надежный способ защиты всех коммуникаций от воды и агрессивного воздействия внешней среды</p>
                       </div>
                     </div>
@@ -325,7 +406,7 @@
             <div class="order-3 order-sm-0">
               <p class="section__title">Есть вопросы? <span>Обращайтесь</span></p>
             </div>
-            <div class="order-4 order-sm-0"><a class="g-btn" href="#">Написать</a></div>
+            <div class="order-4 order-sm-0"><a class="g-btn popup" href="#write">Написать</a></div>
             <div class="order-2 order-sm-0">
               <div class="contacts__phone">
                 <p class="phone__desc">Горячая линия</p><a href="tel:88005559407">8 800 555 94 07</a>
@@ -333,6 +414,22 @@
             </div>
           </div>
         </div>
+        <section class="zoom-anim-dialog mfp-hide" id="write">
+          <div class="container">
+            <div class="row">
+              <form class="form">
+                <div class="form__img"><img src="static/img/content/popup-logo.png" alt="logo"></div>
+                <p class="footer__title">Напишите нам</p>
+                <input type="text" name="name" placeholder="Имя*" required>
+                <input type="phone" name="phone" placeholder="Телефон*" required id="popup-phone">
+                <textarea name="text" cols="30" rows="10" placeholder="Вопрос*"></textarea>
+                <label for="btn">
+                  <input class="g-btn" id="btn" type="submit" value="Написать">
+                </label>
+              </form>
+            </div>
+          </div>
+        </section>
       </section>
     </div>
     <footer>
@@ -372,11 +469,11 @@
               <p class="footer__contacts">Телефон в <br>Санкт-Петербурге:<span class="contacts-point">8 800 555 94 07</span></p>
               <p class="footer__contacts">Email:<span class="contacts-point">sale.khv@kiperr.ru</span></p>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-10 col-lg-4">
               <form class="form">
                 <p class="footer__title">Задайте вопрос о гидроизоляции</p>
                 <input type="text" name="name" placeholder="Имя*" required>
-                <input type="phone" name="phone" placeholder="Телефон*" required>
+                <input type="phone" name="phone" placeholder="Телефон*" required id="phone">
                 <textarea name="text" cols="30" rows="10" placeholder="Вопрос*"></textarea>
                 <label for="btn">
                   <input class="g-btn" id="btn" type="submit" value="Задать вопрос">
@@ -394,6 +491,7 @@
     </footer>
     <script src="static/js/jquery.js"></script>
     <script src="static/js/libs.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="static/js/main.js"></script>
   </body>
 </html>

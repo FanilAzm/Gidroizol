@@ -49,11 +49,11 @@
 }
 
 @font-face {
-	font-family: "LatoLight";
-	src: url("LatoLight/LatoLight.eot");
-	src: url("LatoLight/LatoLight.eot?#iefix")format("embedded-opentype"),
-	url("LatoLight/LatoLight.woff") format("woff"),
-	url("LatoLight/LatoLight.ttf") format("truetype");
+	font-family: "LatoMedium";
+	src: url("LatoMedium/LatoMedium.eot");
+	src: url("LatoMedium/LatoMedium.eot?#iefix")format("embedded-opentype"),
+	url("LatoMedium/LatoMedium.woff") format("woff"),
+	url("LatoMedium/LatoMedium.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }
