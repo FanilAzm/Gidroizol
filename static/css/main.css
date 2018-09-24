@@ -4488,7 +4488,7 @@ button {
     margin: auto 45px;
   }
   .adv__item .sect__img {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
   .cooperate__list {
     text-align: center;
@@ -4543,6 +4543,15 @@ button {
   .direction__item-img:after {
     right: 15px;
     bottom: 15px;
+  }
+  .about .desc-text {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 0.875rem;
+  }
+  .about .desc-text:last-child {
+    margin-bottom: 0;
   }
   .contacts .tabs__item {
     margin: 0 auto;
@@ -4650,15 +4659,6 @@ button {
   }
   .news__item {
     margin-top: 30px;
-  }
-  .about .desc-text {
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 30px;
-    font-size: 0.875rem;
-  }
-  .about .desc-text:last-child {
-    margin-bottom: 0;
   }
   .about__link {
     margin-right: 20px;
@@ -4823,6 +4823,9 @@ button {
   }
   .list__crumbs {
     display: none;
+  }
+  .form label {
+    width: 100%;
   }
 }
 @media screen and (max-width: 400px) {
