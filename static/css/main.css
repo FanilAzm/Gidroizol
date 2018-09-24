@@ -3206,9 +3206,20 @@ button {
   display: block;
   font-size: 0.6875rem;
 }
+.list__crumbs a {
+  display: inline-block;
+}
+.list__crumbs a:after {
+  content: ' /';
+  font-size: inherit;
+  color: #272f3b;
+}
 .list__crumbs span {
   color: #e11335;
   font-family: "HelveticaNeueCyr-Bold", Arial, sans-serif;
+}
+.list__crumbs a:hover {
+  color: #e11335;
 }
 #write {
   position: relative;
