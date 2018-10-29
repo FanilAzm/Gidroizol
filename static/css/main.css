@@ -3579,8 +3579,6 @@ button {
 }
 .slider__img img {
   width: 100%;
-  max-width: 470px;
-  max-height: 440px;
 }
 .facts {
   padding: 100px 0;
