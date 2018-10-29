@@ -3095,7 +3095,7 @@ button {
   height: 140px;
 }
 .product__img img {
-  max-height: 140px;
+  min-width: 130px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3579,6 +3579,8 @@ button {
 }
 .slider__img img {
   width: 100%;
+  max-width: 470px;
+  max-height: 440px;
 }
 .facts {
   padding: 100px 0;
@@ -3597,6 +3599,8 @@ button {
   overflow: hidden;
 }
 .facts .sect__img svg {
+  max-width: 39px;
+  min-height: 37px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3816,7 +3820,8 @@ button {
   color: #fff;
 }
 .news__img img {
-  width: 100%;
+  max-width: 360px;
+  min-height: 190px;
 }
 .news__text {
   padding: 17px;
@@ -3851,7 +3856,8 @@ button {
   border-bottom: 1px solid #ddd;
 }
 .about__slide-img img {
-  width: 100%;
+  max-width: 570px;
+  min-height: 570px;
 }
 .about__slider-logo {
   position: relative;
@@ -3990,7 +3996,9 @@ button {
   margin-right: 36px;
 }
 .question__img img {
-  width: 100%;
+  max-width: 72px;
+  min-height: 72px;
+  border-radius: 50%;
 }
 .tabs {
   text-align: center;
@@ -4193,6 +4201,8 @@ button {
 }
 .sertificate .sert__img img {
   margin: 0 auto;
+  max-width: 134px;
+  min-height: 195px;
 }
 .sertificate .g-btn {
   width: auto;
@@ -4368,6 +4378,7 @@ button {
 }
 .cooperate__item img {
   width: 100%;
+  max-height: 48px;
 }
 .cooperate__form {
   padding: 50px 0 90px;
@@ -4417,13 +4428,13 @@ button {
   padding: 0 0 100px;
 }
 .about__img {
-  width: 550px;
   float: left;
   margin-right: 30px;
   margin-bottom: 10px;
 }
 .about__img img {
-  width: 100%;
+  max-width: 550px;
+  min-height: 550px;
 }
 .desc-text {
   width: 90%;
