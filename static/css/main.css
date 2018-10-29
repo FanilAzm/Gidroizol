@@ -3820,8 +3820,7 @@ button {
   color: #fff;
 }
 .news__img img {
-  max-width: 360px;
-  min-height: 190px;
+  width: 100%;
 }
 .news__text {
   padding: 17px;
@@ -3856,8 +3855,7 @@ button {
   border-bottom: 1px solid #ddd;
 }
 .about__slide-img img {
-  max-width: 570px;
-  min-height: 570px;
+  width: 100%;
 }
 .about__slider-logo {
   position: relative;
@@ -4433,8 +4431,7 @@ button {
   margin-bottom: 10px;
 }
 .about__img img {
-  max-width: 550px;
-  min-height: 550px;
+  width: 100%;
 }
 .desc-text {
   width: 90%;
