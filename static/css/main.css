@@ -3641,7 +3641,6 @@ button {
 }
 .info {
   padding: 100px 0;
-  background-image: url("../../static/img/content/bg-info.png");
   background-size: cover;
   background-position: center top;
 }
@@ -3712,7 +3711,6 @@ button {
 .cooperation {
   position: relative;
   padding: 55px 0 65px;
-  background-image: url("../../static/img/content/bg-cooperate.png");
   background-size: cover;
   background-position: center top;
 }
